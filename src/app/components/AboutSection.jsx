@@ -56,11 +56,11 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={700} height={700} />
+        <Image src="/images/about-image.png" alt="Portrait of Ahmad Alam, QA Engineer" width={700} height={700} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I'm a dedicated Software Quality Assurance Engineer with a focus on delivering reliable, bug-free software. Skilled in both manual and automated testing using tools like Cypress, Playwright and Postman, I ensure smooth user experiences and strong product quality. I enjoy collaborating with teams, improving QA processes, and making sure every release is rock-solid.
+            I am a dedicated Software Quality Assurance Engineer with a focus on delivering reliable, bug-free software. Skilled in both manual and automated testing using tools like Cypress, Playwright and Postman, I ensure smooth user experiences and strong product quality. I enjoy collaborating with teams, improving QA processes, and making sure every release is rock-solid.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
