@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiGmail, SiUpwork, SiFreelancer } from 'react-icons/si';
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -55,12 +56,16 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/Ahmad-SQA" target="_blank">
-            <Image src={GithubIcon} alt="Github Icon" />
+        <div className="flex space-x-6 mt-4 text-5xl text-gray-600">
+          <Link href="https://github.com/Ahmad-SQA" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <FaGithub className="hover:text-white transition-colors duration-300" />
           </Link>
-          <Link href="https://www.linkedin.com/in/ahmad-alam-0a73451b4/" target="_blank">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          <Link href="https://www.upwork.com/freelancers/~013f1019377c1583c8" target="_blank" rel="noopener noreferrer" aria-label="Upwork">
+             <SiUpwork className="hover:text-green-500 transition-colors duration-300" />
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/ahmad-alam-0a73451b4/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <FaLinkedin className="hover:text-blue-600 transition-colors duration-300" />
           </Link>
         </div>
       </div>
